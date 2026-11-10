@@ -1,0 +1,49 @@
+2026-11-10 19:21:42,675 INFO: Logging run of `manage.py deploy`...
+2026-11-10 19:21:42,675 INFO: Created C:\Users\Nishant\Desktop\python_work\learning_log\ll_project\dsd_logs\dsd_2026-11-10-192142.log.
+2026-11-10 19:21:42,675 INFO: 
+2026-11-10 19:21:42,675 INFO: CLI args:
+2026-11-10 19:21:42,675 INFO:   verbosity: 1
+2026-11-10 19:21:42,675 INFO:   settings: None
+2026-11-10 19:21:42,675 INFO:   pythonpath: None
+2026-11-10 19:21:42,675 INFO:   traceback: False
+2026-11-10 19:21:42,675 INFO:   no_color: False
+2026-11-10 19:21:42,675 INFO:   force_color: False
+2026-11-10 19:21:42,675 INFO:   automate_all: True
+2026-11-10 19:21:42,675 INFO:   no_logging: False
+2026-11-10 19:21:42,675 INFO:   ignore_unclean_git: False
+2026-11-10 19:21:42,675 INFO:   deployed_project_name: 
+2026-11-10 19:21:42,675 INFO:   region: us-3.platform.sh
+2026-11-10 19:21:42,675 INFO:   unit_testing: False
+2026-11-10 19:21:42,675 INFO:   e2e_testing: False
+2026-11-10 19:21:42,675 INFO:   key_assist: False
+2026-11-10 19:21:42,675 INFO: 
+2026-11-10 19:21:42,675 INFO: Deployment target: Scalingo
+2026-11-10 19:21:42,675 INFO:   Using plugin: dsd_scalingo
+2026-11-10 19:21:42,707 INFO: Local platform identified: Windows
+2026-11-10 19:21:42,707 INFO: Local project name: ll_project
+2026-11-10 19:21:42,707 INFO: Project root: C:\Users\Nishant\Desktop\python_work\learning_log\ll_project
+2026-11-10 19:21:42,707 INFO: Found .git dir at C:\Users\Nishant\Desktop\python_work\learning_log.
+2026-11-10 19:21:42,707 INFO: 
+2026-11-10 19:21:42,707 INFO: git status --porcelain
+2026-11-10 19:21:42,801 INFO: ?? .gitignore
+2026-11-10 19:21:42,801 INFO: ?? ll_project/dsd_logs/dsd_2026-11-10-192142.log
+2026-11-10 19:21:42,801 INFO: 
+2026-11-10 19:21:42,801 INFO: git diff --unified=0
+2026-11-10 19:21:42,912 INFO: 
+2026-11-10 19:21:42,912 INFO: 
+2026-11-10 19:21:42,912 INFO: DSDCommandError:
+2026-11-10 19:21:42,912 INFO: 
+2026-11-10 19:21:42,912 INFO: The output of `git status` indicates that you have uncommitted changes.
+2026-11-10 19:21:42,912 INFO: 
+2026-11-10 19:21:42,912 INFO: We highly recommend you commit all changes before running the deploy command,
+2026-11-10 19:21:42,912 INFO: so you can easily undo configuration changes if deployment doesn't work, or if
+2026-11-10 19:21:42,912 INFO: you wish to deploy to a different platform.
+2026-11-10 19:21:42,912 INFO: 
+2026-11-10 19:21:42,912 INFO: Please commit all changes and then run the deploy command again. If you really
+2026-11-10 19:21:42,912 INFO: wish to continue without committing current changes, you can use
+2026-11-10 19:21:42,912 INFO: the --ignore-unclean-git flag.
+2026-11-10 19:21:42,912 INFO: 
+2026-11-10 19:21:42,912 INFO: It's especially important to have a clean status when using the --automate-all
+2026-11-10 19:21:42,912 INFO: flag. In this case, django-simple-deploy will make commits on your behalf. It's a
+2026-11-10 19:21:42,912 INFO: really good idea to keep your commits separate from the commits that
+2026-11-10 19:21:42,912 INFO: django-simple-deploy makes.
