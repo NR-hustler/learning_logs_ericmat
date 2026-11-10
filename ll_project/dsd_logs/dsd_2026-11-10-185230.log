@@ -1,0 +1,68 @@
+2026-11-10 18:52:30,317 INFO: Logging run of `manage.py deploy`...
+2026-11-10 18:52:30,317 INFO: Created C:\Users\Nishant\Desktop\python_work\learning_log\ll_project\dsd_logs\dsd_2026-11-10-185230.log.
+2026-11-10 18:52:30,317 INFO: 
+2026-11-10 18:52:30,317 INFO: CLI args:
+2026-11-10 18:52:30,317 INFO:   verbosity: 1
+2026-11-10 18:52:30,317 INFO:   settings: None
+2026-11-10 18:52:30,317 INFO:   pythonpath: None
+2026-11-10 18:52:30,317 INFO:   traceback: False
+2026-11-10 18:52:30,317 INFO:   no_color: False
+2026-11-10 18:52:30,319 INFO:   force_color: False
+2026-11-10 18:52:30,319 INFO:   automate_all: True
+2026-11-10 18:52:30,319 INFO:   no_logging: False
+2026-11-10 18:52:30,319 INFO:   ignore_unclean_git: False
+2026-11-10 18:52:30,319 INFO:   deployed_project_name: 
+2026-11-10 18:52:30,319 INFO:   region: us-3.platform.sh
+2026-11-10 18:52:30,319 INFO:   unit_testing: False
+2026-11-10 18:52:30,319 INFO:   e2e_testing: False
+2026-11-10 18:52:30,319 INFO:   key_assist: False
+2026-11-10 18:52:30,321 INFO: 
+2026-11-10 18:52:30,321 INFO: Deployment target: Scalingo
+2026-11-10 18:52:30,321 INFO:   Using plugin: dsd_scalingo
+2026-11-10 18:52:30,378 INFO: Local platform identified: Windows
+2026-11-10 18:52:30,378 INFO: Local project name: ll_project
+2026-11-10 18:52:30,378 INFO: Project root: C:\Users\Nishant\Desktop\python_work\learning_log\ll_project
+2026-11-10 18:52:30,378 INFO: Found .git dir at C:\Users\Nishant\Desktop\python_work\learning_log.
+2026-11-10 18:52:30,378 INFO: 
+2026-11-10 18:52:30,378 INFO: git status --porcelain
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/certifi-2026.10.23.dist-info/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/certifi/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/charset_normalizer-3.5.2.dist-info/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/charset_normalizer/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/django_simple_deploy-1.4.1.dist-info/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/django_simple_deploy/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/dsd_scalingo-0.2.3.dist-info/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/dsd_scalingo/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/idna-3.20.dist-info/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/idna/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/pluggy-1.7.0.dist-info/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/pluggy/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/requests-2.34.2.dist-info/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/requests/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/toml-0.10.2.dist-info/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/toml/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/urllib3-2.8.0.dist-info/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Lib/site-packages/urllib3/
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Scripts/idna.exe
+2026-11-10 18:52:30,533 INFO: ?? ll_env/Scripts/normalizer.exe
+2026-11-10 18:52:30,533 INFO: ?? ll_project/dsd_logs/
+2026-11-10 18:52:30,533 INFO: 
+2026-11-10 18:52:30,533 INFO: git diff --unified=0
+2026-11-10 18:52:30,678 INFO: 
+2026-11-10 18:52:30,678 INFO: 
+2026-11-10 18:52:30,678 INFO: DSDCommandError:
+2026-11-10 18:52:30,678 INFO: 
+2026-11-10 18:52:30,678 INFO: The output of `git status` indicates that you have uncommitted changes.
+2026-11-10 18:52:30,678 INFO: 
+2026-11-10 18:52:30,678 INFO: We highly recommend you commit all changes before running the deploy command,
+2026-11-10 18:52:30,678 INFO: so you can easily undo configuration changes if deployment doesn't work, or if
+2026-11-10 18:52:30,678 INFO: you wish to deploy to a different platform.
+2026-11-10 18:52:30,678 INFO: 
+2026-11-10 18:52:30,678 INFO: Please commit all changes and then run the deploy command again. If you really
+2026-11-10 18:52:30,678 INFO: wish to continue without committing current changes, you can use
+2026-11-10 18:52:30,678 INFO: the --ignore-unclean-git flag.
+2026-11-10 18:52:30,678 INFO: 
+2026-11-10 18:52:30,678 INFO: It's especially important to have a clean status when using the --automate-all
+2026-11-10 18:52:30,678 INFO: flag. In this case, django-simple-deploy will make commits on your behalf. It's a
+2026-11-10 18:52:30,678 INFO: really good idea to keep your commits separate from the commits that
+2026-11-10 18:52:30,678 INFO: django-simple-deploy makes.
