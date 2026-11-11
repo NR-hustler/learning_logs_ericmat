@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,12 +21,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-1syi64+dz_v^=z!ipg#dm7fq_*+!91z!4qb5w#r@sxk74sj9g@'
+# Earlier code.
+# SECRET_KEY = 'django-insecure-1syi64+dz_v^=z!ipg#dm7fq_*+!91z!4qb5w#r@sxk74sj9g@'
+
+#Below 2 lines = gemini code
+SECRET_KEY = os.environ.get('SECRET_KEY', 'your-default-local-dev-key')
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#Earlier code.
+# DEBUG = True
 
-ALLOWED_HOSTS = []
+#gemini code - added 3 elements in the empty list. The list was empty earlier.
+ALLOWED_HOSTS = ['.scalingo.io', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -50,6 +58,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    #Gemini asked to add whitenoise
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -124,6 +134,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+#Below 2 lines are gemini code
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
